@@ -1,0 +1,40 @@
+
+    h1 
+    {
+        font-weight: 700;
+        color: rgb(0, 255, 170);
+    }
+
+   
+:host(.test)
+{
+    .secret1{
+        width: 100px;
+        height: 100px;
+        background-color: darkgreen;
+        animation: fff 5s infinite;
+    }
+}
+:host(.test2)
+{
+    .secret2{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(87, 0, 51);
+        animation-name: fff;
+        animation-duration: 5s;
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-iteration-count: infinite;
+    }
+
+   
+
+}
+
+@keyframes fff {
+    0%{ transform: scale(1); }
+    25%{ transform: scale(1.25); }
+    50%{ transform: scale(1.7); }
+    75%{ transform: scale(1.25); }
+    100%{ transform: scale(0.8); }
+}

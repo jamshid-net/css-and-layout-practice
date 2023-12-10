@@ -1,0 +1,55 @@
+<div class="website">
+    <div class="header">
+        <div class="header_inner">
+            <div class="logo">
+    
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">MENU 1</a></li>
+                    <li><a href="#">MENU 2</a></li>
+                    <li><a href="#">MENU 3</a></li>
+                    <li><a href="#">MENU 4</a></li>
+                    <li><a href="#">MENU 5</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+
+    <div class="image_content">
+        <div class="main_image">
+
+            <img *ngIf="mainBackground"  class="bg_img" [src]="mainBackground" alt="">
+            
+            <img [src]="choosenImage"
+            [className]="showAnim ? 'animation_cl':''"
+            >
+        </div>
+        <div class="filter_content">
+            <ul>
+                <li>
+                    <button (click)="filterImage('0')">All</button>
+                </li>
+                <li>
+                    <button (click)="filterImage('1')">Action</button>
+                </li>
+                <li>
+                    <button (click)="filterImage('2')">Shooter</button>
+                </li>
+                <li>
+                    <button (click)="filterImage('3')">Strategy</button>
+                </li>
+            </ul>
+        </div>
+        <div class="images">
+           <img 
+           (mouseenter)="onMouseEnter(image.photoPath)" (mouseleave)="onMouseLeave()"
+           (click)="whenClickImage(image.photoPath);"
+           [className]="showAnim2 ? 'animation_cl3':''" [src]="image.photoPath" *ngFor="let image of photos">
+        </div>
+    </div>
+
+</div>

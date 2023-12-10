@@ -1,0 +1,132 @@
+@font-face{
+    font-family: 'Helvitica', sans-serif;
+    src: url(../assets/fonts/Helvetica.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Helvitica-Bold', sans-serif;
+    src: url(../assets/fonts/Helvetica-Bold.ttf);
+    font-style:normal;
+    font-weight: 700;
+}
+@import url(../../node_modules/animate.css/animate.min.css);
+
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar
+{
+    width: 100%;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+
+}
+.navbar ul 
+{
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul li 
+{
+    display: flex;
+    height: 40px;
+    margin: 5px;
+    
+}
+.navbar ul li a
+{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: rgb(38, 0, 88);
+    transition: color 0.5s ease-in-out;
+    
+} 
+.navbar ul li a:hover
+{
+    color: rgb(122, 23, 250);
+}
+
+.website
+{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgb(70, 23, 201);
+    box-shadow: rgba(67, 6, 117, 0.25) 0px 54px 55px, rgba(83, 7, 73, 0.12) 0px -12px 30px, rgba(45, 3, 70, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13pxrgba(67, 2, 83, 0.09) 0px -3px 5px;
+}
+
+.cards {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 20px 50px rgb(118, 118, 118);
+
+}
+
+
+.card_item {
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+    
+    /* transform-style: preserve-3d;
+    transform: rotateX(45deg) scale(0.7); */
+    box-sizing: border-box;
+  
+    border: 1px solid rgb(216, 213, 213);
+    background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    margin: 2% 2%;
+ 
+}
+
+
+/* .card_item:hover
+{
+    transform: scale(1.1);
+} */
+.card_item:hover p
+{
+    color: red;
+}
+
+.card_item p 
+{
+    margin: 0;
+    transition: color 2s ease-in-out;
+
+}
+
+
+@media screen and (max-width:500px) {
+    
+    .navbar ul li 
+    {
+        width: 100%;
+    }
+
+}

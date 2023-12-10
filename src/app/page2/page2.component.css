@@ -1,0 +1,250 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Helvetica-reg;
+    src: url(../../assets/fonts/Helvetica.ttf);
+}
+.website{
+    max-width: 1680px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: Helvetica-reg;
+    
+}
+
+.navbar
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(112, 112, 112);
+    padding: 0 100px;
+   
+}
+
+.navbar .navbar__inner
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+
+}
+.navbar .navbar__inner .logo 
+{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar__inner_right 
+{
+    display: flex;
+   
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    
+
+}
+
+.navbar__inner_right ul 
+{
+    
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+.navbar__inner_right ul li 
+{
+    margin: 0 7px;
+    color: #6e6e6e;
+   
+    display: flex;
+    flex-wrap: nowrap;
+}
+.navbar__inner_right ul li a
+{
+    transition: all .10ms ease;
+}
+.navbar__inner_right ul li a:hover
+{
+    color: black;
+    font-weight: 600;
+   
+}
+
+.navbar .navbar__inner .navbar__inner_right button 
+{
+    padding: 7px 10px;
+    border-radius: 25px;
+    border: 1px solid #6e6e6e;
+    transition: all .2ms ease;
+} 
+.navbar .navbar__inner .navbar__inner_right button:hover
+{
+    background-color: #29323c;
+    color: azure;
+}
+.banner 
+{
+    background-image: url(../../assets/images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    
+}
+ .banner__inner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.banner__inner p 
+{
+    color: #6e6e6e;
+}
+.banner__inner h1 
+{
+    font-size: 30px;
+}
+.filter_card
+{
+    padding: 0 100px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+}
+.filter_card ul 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+
+.filter_card ul li button 
+{
+    color:  #6e6e6e;
+    margin: 0 4px;
+    transition: 0.2s ease;
+
+}
+.filter_card ul li button:hover
+{
+    border-radius: 20px;
+    border: 1px solid #6e6e6e;
+}
+.cards 
+{
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+.block__img
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 1.5%;
+}
+.block__img img 
+{
+    display: block;
+    border-radius: 15px;
+    margin: 20px 0;
+    width: 99%; 
+    box-shadow: 0 0 20px rgba(97, 97, 97, 0.8),    
+                0 0 30px rgba(66, 66, 66, 0.4),
+                0 0 40px rgba(0, 0, 0, 0.2);
+   
+
+}
+@media screen and (max-width:1200px)
+{
+
+
+
+}
+@media screen and (max-width:1025px)
+{
+    .navbar .navbar__inner
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .block__img img {
+        height: 10%;
+    }
+}
+@media screen and (max-width:769px)
+{
+    .navbar .navbar__inner_right
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .navbar .navbar__inner_right ul 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .navbar .navbar__inner_right ul li
+    {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+    }
+    .navbar .navbar__inner_right ul li a
+    {
+        width: 100%;
+        text-align: center;
+        padding: 7px 10px;
+        border-radius: 25px;
+        border: 1px solid #6e6e6e;
+        transition: all .2ms ease;
+    }
+    .navbar .navbar__inner_right ul li a:hover
+    {
+        background-color: #29323c;
+        color: azure;
+    }
+    .navbar .navbar__inner .navbar__inner_right button {
+        width: 100%;
+        margin-top: 2.5px;
+    }
+}
+@media screen and (max-width:481px)
+{
+
+}
+    

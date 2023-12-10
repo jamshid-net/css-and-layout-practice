@@ -1,0 +1,55 @@
+<div class="website">
+    <div class="navbar">
+        <div class="navbar__inner">
+            <img class="logo" src="../../assets/svgs/logo-youtube-svgrepo-com.svg" />
+
+           
+            <div class="navbar__inner_right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Mega menu</a></li>
+                    <li><a href="#">Download resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button>
+                    Get Webify Today
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+            <div class="banner__inner">
+                <p>David Gilmour</p>
+                <h1>Making at the sweet spot between design and speed.</h1>
+            </div>
+    </div>
+
+    <div class="filter_card">
+        <ul>
+            <li><button>All</button></li>
+            <li><button>Branding</button></li>
+            <li><button>Motion</button></li>
+            <li><button>PhotoGrapht</button></li>
+            <li><button>UI/UX</button></li>
+        </ul>
+    </div>
+    <div #cards class="cards">
+        <div class="block__img">
+           
+          <img *ngFor="let imagePath of block1Images" [src]="imagePath">
+           
+        </div>
+        <div class="block__img">
+           
+          <img *ngFor="let imagePath of block2Images" [src]="imagePath">
+           
+        </div>
+        <div class="block__img">
+           
+          <img *ngFor="let imagePath of block3Images" [src]="imagePath">
+           
+        </div>
+      
+       
+    </div>
+</div>
